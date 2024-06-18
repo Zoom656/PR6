@@ -23,10 +23,38 @@
 
         <Frame Content="" Source="Pages/FirstPage.xaml"  Name="MainFrame"  Grid.Row="1" Height="900" VerticalAlignment="Center" HorizontalAlignment="Right" Width="792" Navigated="MainFrame_Navigated" />
 
-        
+        <Menu Height="25" VerticalAlignment="Bottom">
 
-        <TextBlock Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center"
-           FontSize="20" Foreground="Blue" FontFamily="Arial" />
+            <MenuItem Name="menuBuyTicket" Header="Купить билет">
+            </MenuItem>
+
+            <MenuItem Header="Сервисы и услуги">
+                <MenuItem Header="О покупке и оплате">
+                    <MenuItem Name="menuTarif" Header="Тарифы"></MenuItem>
+                    <MenuItem Name="menuRules" Header="Правила бронирования" ></MenuItem>
+                </MenuItem>
+
+                <MenuItem Header="Направления и рейсы">
+                    <MenuItem Name="menuGid" Header="Трэвэл-Гид"></MenuItem>
+                    <MenuItem Name="menuRasoisanie" Header="Расписание рейсов" ></MenuItem>
+                </MenuItem>
+
+                <MenuItem Header="Дополнительные услуги">
+                    <MenuItem Name="menuClass" Header="Повышение класса"></MenuItem>
+                    <MenuItem Name="menuSeat" Header="Выбор места" ></MenuItem>
+                </MenuItem>
+                
+            </MenuItem>
+
+            <MenuItem Name="menuSpec" Header="Спецпредложения">
+            </MenuItem>
+            
+            
+            
+
+        </Menu>
+
+
 
     </Grid>
 </Window>
