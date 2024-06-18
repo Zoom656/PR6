@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace PR6.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для FirstPage.xaml
+    /// Логика взаимодействия для ActivatePage.xaml
     /// </summary>
-    public partial class FirstPage : Page
+    public partial class ActivatePage : Page
     {
-        public FirstPage()
+        public ActivatePage()
         {
             InitializeComponent();
-        }
-
-        private void btnFirstEnter_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new EnterPage());
         }
     }
 }

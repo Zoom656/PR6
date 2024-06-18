@@ -67,14 +67,35 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\ActivatePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\EnterPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\FirstPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PersCabPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\ActivatePage.xaml.cs">
+      <DependentUpon>ActivatePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EnterPage.xaml.cs">
+      <DependentUpon>EnterPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\FirstPage.xaml.cs">
       <DependentUpon>FirstPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PersCabPage.xaml.cs">
+      <DependentUpon>PersCabPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

@@ -11,8 +11,8 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
@@ -63,31 +63,31 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Button Name="btnFirstEnter"  Grid.Row="1" Grid.Column="1" ToolTip="нажмите для входа" Height="30" Width="160"  
-     VerticalAlignment="Center" HorizontalAlignment="Left">
-            <TextBlock TextAlignment="Left"> Вход</TextBlock>
+        <Button Name="btnFirstEnter"  Grid.Row="1" Grid.Column="1" ToolTip="нажмите для входа" Height="30" Width="150"  
+     VerticalAlignment="Center" HorizontalAlignment="Left" Click="btnFirstEnter_Click">
+            <TextBlock Width="145" TextAlignment="Left"> Вход</TextBlock>
         </Button>
 
-        <Button Name="btnFirstRgstr"  Grid.Row="2" Grid.Column="1" ToolTip="нажмите для входа" Height="30" Width="160"  
+        <Button Name="btnFirstRgstr"  Grid.Row="2" Grid.Column="1" ToolTip="нажмите для входа" Height="30" Width="150"  
 VerticalAlignment="Center" HorizontalAlignment="Left">
-            <TextBlock TextAlignment="Left"> Регистрация</TextBlock>
+            <TextBlock Width="145" TextAlignment="Left"> Регистрация</TextBlock>
         </Button>
 
         <Label Grid.Row="1" Grid.Column="2" Content="Вступить в программу «Аэрофлот Бонус»" Grid.ColumnSpan="7" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="12"/>
 
         <Button Name="btnFirstUchPrg"  Grid.Row="2" Grid.Column="2" ToolTip="" Grid.ColumnSpan="4" Grid.RowSpan="2" Height="50" Width="100"  
 VerticalAlignment="Center" HorizontalAlignment="Left">
-            <TextBlock TextAlignment="Left"> Стать участником программы</TextBlock>
+            <TextBlock TextAlignment="Center"> Стать участником<LineBreak/>программы</TextBlock>
         </Button>
 
         <Button Name="btnFirstActCrd"  Grid.Row="2" Grid.Column="5" ToolTip="" Grid.ColumnSpan="4" Grid.RowSpan="2" Height="50" Width="100"  
 VerticalAlignment="Center" HorizontalAlignment="Left">
-            <TextBlock TextAlignment="Left"> Активировать временную карту</TextBlock>
+            <TextBlock TextAlignment="Center"> Активировать<LineBreak/>временную карту</TextBlock>
         </Button>
 
         <Button Name="btnFirstActCab"  Grid.Row="2" Grid.Column="8" ToolTip="" Grid.ColumnSpan="4" Grid.RowSpan="2" Height="50" Width="100"  
 VerticalAlignment="Center" HorizontalAlignment="Left">
-            <TextBlock TextAlignment="Left"> Активировать личный кабинет</TextBlock>
+            <TextBlock TextAlignment="Center"> Активировать<LineBreak/>личный кабинет</TextBlock>
         </Button>
 
         <TextBlock Grid.Row="4" Grid.Column="2"  Grid.ColumnSpan="4" Text="* Обязательные поля">                        
@@ -180,7 +180,7 @@ VerticalAlignment="Center" HorizontalAlignment="Left">
 
         <TextBox Name="txtFirstPhone" Grid.Row="21" Grid.Column="3" Grid.ColumnSpan="4" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите email" Height="30" Width="140"/>
 
-        <Label Grid.Row="23" Grid.Column="2"  Grid.ColumnSpan="3" Content="Адрес отправки карты">
+        <Label Grid.Row="23" Grid.Column="2"  Grid.ColumnSpan="4" Content="Адрес отправки карты">
         </Label>
 
         <TextBlock Grid.Row="24" Grid.Column="2"  Grid.ColumnSpan="3" Text="Тип адреса *">
