@@ -5,8 +5,8 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:PR6.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="800" d:DesignWidth="800"
-      Title="FirstPage">
+      d:DesignHeight="1000" d:DesignWidth="800"
+      Title="FirstPage"  Background="White">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -45,7 +45,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="30"/>
             <ColumnDefinition Width="160"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="45"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
@@ -63,64 +63,62 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Button Name="btnFirstEnter"  Grid.Row="1" Grid.Column="1" ToolTip="нажмите для входа" Height="30" Width="150"  
-     VerticalAlignment="Center" HorizontalAlignment="Left" Click="btnFirstEnter_Click">
+        <Image Source="../Resource/logo.jpg" Grid.Column="1" Grid.Row="1"/>
+
+        <Button Name="btnFirstEnter"  Grid.Row="2" Grid.Column="1" ToolTip="нажмите для входа" HorizontalAlignment="Left" Click="btnFirstEnter_Click">
             <TextBlock Width="145" TextAlignment="Left"> Вход</TextBlock>
         </Button>
 
-        <Button Name="btnFirstRgstr"  Grid.Row="2" Grid.Column="1" ToolTip="нажмите для входа" Height="30" Width="150"  
-VerticalAlignment="Center" HorizontalAlignment="Left">
+        <Button Name="btnFirstRgstr"  Grid.Row="3" Grid.Column="1" ToolTip="нажмите для входа" HorizontalAlignment="Left">
             <TextBlock Width="145" TextAlignment="Left"> Регистрация</TextBlock>
         </Button>
 
-        <Label Grid.Row="1" Grid.Column="2" Content="Вступить в программу «Аэрофлот Бонус»" Grid.ColumnSpan="7" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="12"/>
+        <Label Grid.Row="1" Grid.Column="2" Content="Вступить в программу «Аэрофлот Бонус»" Grid.ColumnSpan="10" Height="45" Width="320" FontSize="16"/>
 
-        <Button Name="btnFirstUchPrg"  Grid.Row="2" Grid.Column="2" ToolTip="" Grid.ColumnSpan="4" Grid.RowSpan="2" Height="50" Width="100"  
-VerticalAlignment="Center" HorizontalAlignment="Left">
+
+        <Button Name="btnFirstUchPrg"  Grid.Row="2" Grid.Column="2" ToolTip="" Grid.ColumnSpan="3" Grid.RowSpan="2" Height="60" Width="100"  FontSize="14" >
             <TextBlock TextAlignment="Center"> Стать участником<LineBreak/>программы</TextBlock>
         </Button>
 
-        <Button Name="btnFirstActCrd"  Grid.Row="2" Grid.Column="5" ToolTip="" Grid.ColumnSpan="4" Grid.RowSpan="2" Height="50" Width="100"  
-VerticalAlignment="Center" HorizontalAlignment="Left">
+        <Button Name="btnFirstActCrd" FontSize="14" Grid.Row="2" Grid.Column="5" ToolTip="" Grid.ColumnSpan="4" Grid.RowSpan="2" Height="60" Width="100">
             <TextBlock TextAlignment="Center"> Активировать<LineBreak/>временную карту</TextBlock>
         </Button>
 
-        <Button Name="btnFirstActCab"  Grid.Row="2" Grid.Column="8" ToolTip="" Grid.ColumnSpan="4" Grid.RowSpan="2" Height="50" Width="100"  
-VerticalAlignment="Center" HorizontalAlignment="Left">
+        <Button Name="btnFirstActCab"  Grid.Row="2" Grid.Column="8" ToolTip="" Grid.ColumnSpan="4" Grid.RowSpan="2" Height="60" Width="100"  FontSize="14">
             <TextBlock TextAlignment="Center"> Активировать<LineBreak/>личный кабинет</TextBlock>
         </Button>
 
         <TextBlock Grid.Row="4" Grid.Column="2"  Grid.ColumnSpan="4" Text="* Обязательные поля">                        
         </TextBlock>
 
-        <Label Grid.Row="6" Grid.Column="2"  Grid.ColumnSpan="4" Content="Регистрационные данные">
-        </Label>
+        <Label Grid.Row="6" Grid.Column="2"  Grid.ColumnSpan="5" Content="Регистрационные данные" Width="180"/>
+
 
         <TextBlock Grid.Row="7" Grid.Column="2"  Grid.ColumnSpan="3" Text="Email *">
         </TextBlock>
 
-        <TextBox Name="txtFirstMail" Grid.Row="8" Grid.Column="2" Grid.ColumnSpan="3" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите email" Height="30" Width="110"/>
+        <TextBox Name="txtFirstMail" Grid.Row="8" Grid.Column="2" Grid.ColumnSpan="3" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите email"/>
 
         <TextBlock Grid.Row="7" Grid.Column="5"  Grid.ColumnSpan="3" Text="Фамилия *">
         </TextBlock>
 
-        <TextBox Name="txtFirstFam" Grid.Row="8" Grid.Column="5" Grid.ColumnSpan="3" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите фамилию" Height="30" Width="110"/>
+        <TextBox Name="txtFirstFam" Grid.Row="8" Grid.Column="5" Grid.ColumnSpan="3" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите фамилию"/>
         
         <TextBlock Grid.Row="7" Grid.Column="8"  Grid.ColumnSpan="3" Text="Имя *">
         </TextBlock>
 
-        <TextBox Name="txtFirstName" Grid.Row="8" Grid.Column="8" Grid.ColumnSpan="3" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите имя" Height="30" Width="110"/>
+        <TextBox Name="txtFirstName" Grid.Row="8" Grid.Column="8" Grid.ColumnSpan="3" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите имя"/>
 
         <TextBlock Grid.Row="7" Grid.Column="11"  Grid.ColumnSpan="3" Text="Дата рождения *">
         </TextBlock>
 
-        <DatePicker  Grid.Row="8" Grid.Column="11" Grid.ColumnSpan="3" Height="30" Width="110" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="выберите дату рождения" DisplayDateStart="01/01/1850" DisplayDateEnd="01/01/2010" 
-             FirstDayOfWeek="Monday" DisplayDate="02/01/1990" SelectedDateFormat="Long"/>
+        <DatePicker  Grid.Row="8" Grid.Column="11" Grid.ColumnSpan="3"  VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="выберите дату рождения"   
+             FirstDayOfWeek="Monday" />
 
         <TextBlock Grid.Row="7" Grid.Column="14"  Grid.ColumnSpan="3" Text="Пол *">
         </TextBlock>
 
-        <ComboBox Name="cmbFirstGndr"  Grid.Row="8" Grid.Column="14" Grid.ColumnSpan="3" Height="30" Width="110" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="выберите пол">
+        <ComboBox Name="cmbFirstGndr"  Grid.Row="8" Grid.Column="14" Grid.ColumnSpan="3" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="выберите пол">
             <ComboBoxItem>Мужской</ComboBoxItem>
             <ComboBoxItem>Женский</ComboBoxItem>
         </ComboBox>
@@ -128,19 +126,19 @@ VerticalAlignment="Center" HorizontalAlignment="Left">
         <TextBlock Grid.Row="10" Grid.Column="2"  Grid.ColumnSpan="3" Text="Пароль *">
         </TextBlock>
 
-        <PasswordBox  Grid.Row="11" Grid.Column="2"  Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" Height="30" Width="110" ToolTip="Введите пароль" >
+        <PasswordBox  Grid.Row="11" Grid.Column="2"  Grid.ColumnSpan="3" ToolTip="Введите пароль" >
         </PasswordBox>
 
         <TextBlock Grid.Row="10" Grid.Column="5"  Grid.ColumnSpan="3" Text="Повторите пароль *">
         </TextBlock>
 
-        <PasswordBox  Grid.Row="11" Grid.Column="5"  Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Center" Height="30" Width="110" ToolTip="Введите пароль еще раз" >
+        <PasswordBox  Grid.Row="11" Grid.Column="5"  Grid.ColumnSpan="3" ToolTip="Введите пароль еще раз" >
         </PasswordBox>
 
         <TextBlock Grid.Row="13" Grid.Column="2"  Grid.ColumnSpan="6" Text="Секретный вопрос *">
         </TextBlock>
 
-        <ComboBox Name="cmbFirstScrtQst"  Grid.Row="14" Grid.Column="2" Grid.ColumnSpan="6" Height="30" Width="220" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="выберите секретный вопрос">
+        <ComboBox Name="cmbFirstScrtQst"  Grid.Row="14" Grid.Column="2" Grid.ColumnSpan="6" Width="220" ToolTip="выберите секретный вопрос">
             <ComboBoxItem>Девичья фамилия бабушки</ComboBoxItem>
             <ComboBoxItem>Дата рождения дедушки</ComboBoxItem>
             <ComboBoxItem>Название любимой книги</ComboBoxItem>
@@ -150,12 +148,12 @@ VerticalAlignment="Center" HorizontalAlignment="Left">
         <TextBlock Grid.Row="13" Grid.Column="8"  Grid.ColumnSpan="6" Text="Ответ на секретный вопрос *">
         </TextBlock>
 
-        <TextBox Name="txtFirstScrtAnswr" Grid.Row="14" Grid.Column="8" Grid.ColumnSpan="6" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите email" Height="30" Width="220"/>
+        <TextBox Name="txtFirstScrtAnswr" Grid.Row="14" Grid.Column="8" Grid.ColumnSpan="6" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите email"/>
 
         <TextBlock Grid.Row="16" Grid.Column="2"  Grid.ColumnSpan="6" Text="Язык корреспонденции *">
         </TextBlock>
 
-        <ComboBox Name="cmbFirstPostLang"  Grid.Row="17" Grid.Column="2" Grid.ColumnSpan="6" Height="30" Width="220" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="выберите секретный вопрос">
+        <ComboBox Name="cmbFirstPostLang"  Grid.Row="17" Grid.Column="2" Grid.ColumnSpan="6" Width="220" ToolTip="выберите секретный вопрос">
             <ComboBoxItem>Русский</ComboBoxItem>
             <ComboBoxItem>English</ComboBoxItem>
         </ComboBox>
@@ -166,7 +164,7 @@ VerticalAlignment="Center" HorizontalAlignment="Left">
         <TextBlock Grid.Row="20" Grid.Column="2"  Grid.ColumnSpan="3" Text="Номер телефона *">
         </TextBlock>
 
-        <ComboBox Name="cmbFirstPhoneCode"  Grid.Row="21" Grid.Column="2"  Height="30" Width="35" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="выберите секретный вопрос">
+        <ComboBox Name="cmbFirstPhoneCode"  Grid.Row="21" Grid.Column="2" Width="40"  ToolTip="выберите секретный вопрос">
             <ComboBoxItem>+7</ComboBoxItem>
             <ComboBoxItem>+1</ComboBoxItem>
             <ComboBoxItem>+2</ComboBoxItem>
@@ -178,15 +176,15 @@ VerticalAlignment="Center" HorizontalAlignment="Left">
             <ComboBoxItem>+9</ComboBoxItem>
         </ComboBox>
 
-        <TextBox Name="txtFirstPhone" Grid.Row="21" Grid.Column="3" Grid.ColumnSpan="4" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите email" Height="30" Width="140"/>
+        <TextBox Name="txtFirstPhone" Grid.Row="21" Grid.Column="3" Grid.ColumnSpan="4" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите email" Width="140"/>
 
-        <Label Grid.Row="23" Grid.Column="2"  Grid.ColumnSpan="4" Content="Адрес отправки карты">
+        <Label Grid.Row="23" Grid.Column="2" Width="160" Grid.ColumnSpan="5" Content="Адрес отправки карты">
         </Label>
 
         <TextBlock Grid.Row="24" Grid.Column="2"  Grid.ColumnSpan="3" Text="Тип адреса *">
         </TextBlock>
 
-        <ComboBox Name="cmbFirstAdrs"  Grid.Row="25" Grid.Column="2" Grid.ColumnSpan="3" Height="30" Width="110" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="выберите адрес">
+        <ComboBox Name="cmbFirstAdrs"  Grid.Row="25" Grid.Column="2" Grid.ColumnSpan="3" ToolTip="выберите адрес">
             <ComboBoxItem>Домашний адрес</ComboBoxItem>
             <ComboBoxItem>Рабочий адрес</ComboBoxItem>
         </ComboBox>
@@ -194,7 +192,7 @@ VerticalAlignment="Center" HorizontalAlignment="Left">
         <TextBlock Grid.Row="24" Grid.Column="5"  Grid.ColumnSpan="3" Text="Страна *">
         </TextBlock>
 
-        <ComboBox Name="cmbFirstCntry"  Grid.Row="25" Grid.Column="5" Grid.ColumnSpan="3" Height="30" Width="110" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="выберите адрес">
+        <ComboBox Name="cmbFirstCntry"  Grid.Row="25" Grid.Column="5" Grid.ColumnSpan="3" ToolTip="выберите адрес">
             <ComboBoxItem>Россия</ComboBoxItem>
             <ComboBoxItem>Австрия</ComboBoxItem>
             <ComboBoxItem>Австралия</ComboBoxItem>
@@ -205,42 +203,42 @@ VerticalAlignment="Center" HorizontalAlignment="Left">
         <TextBlock Grid.Row="24" Grid.Column="8"  Grid.ColumnSpan="3" Text="Регион/область">
         </TextBlock>
 
-        <TextBox Name="txtFirstRegion" Grid.Row="25" Grid.Column="8" Grid.ColumnSpan="3" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите email" Height="30" Width="110"/>
+        <TextBox Name="txtFirstRegion" Grid.Row="25" Grid.Column="8" Grid.ColumnSpan="3" ToolTip="введите email"/>
 
-        <TextBlock Grid.Row="24" Grid.Column="11"  Grid.ColumnSpan="4" Text="Город (населенный пункт) *">
+        <TextBlock Grid.Row="24" Grid.Column="11"  Grid.ColumnSpan="5" Width="160" Text="Город (населенный пункт) *">
         </TextBlock>
 
-        <TextBox Name="txtFirstCity" Grid.Row="25" Grid.Column="11" Grid.ColumnSpan="5" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите email" Height="30" Width="150"/>
+        <TextBox Name="txtFirstCity" Grid.Row="25" Grid.Column="11" Grid.ColumnSpan="5" ToolTip="введите email" Width="150"/>
 
         <TextBlock Grid.Row="27" Grid.Column="2"  Grid.ColumnSpan="3" Text="Улица">
         </TextBlock>
 
-        <TextBox Name="txtFirstStreet" Grid.Row="28" Grid.Column="2" Grid.ColumnSpan="3" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите email" Height="30" Width="110"/>
+        <TextBox Name="txtFirstStreet" Grid.Row="28" Grid.Column="2" Grid.ColumnSpan="3" ToolTip="введите email"/>
 
         <TextBlock Grid.Row="27" Grid.Column="5"  Grid.ColumnSpan="2" Text="Дом №">
         </TextBlock>
 
-        <TextBox Name="txtFirstHome" Grid.Row="28" Grid.Column="5" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите email" Height="30" Width="70"/>
+        <TextBox Name="txtFirstHome" Grid.Row="28" Grid.Column="5" Grid.ColumnSpan="2" ToolTip="введите email" Width="70"/>
 
         <TextBlock Grid.Row="27" Grid.Column="7"  Grid.ColumnSpan="2" Text="Корпус">
         </TextBlock>
 
-        <TextBox Name="txtFirstCorpus" Grid.Row="28" Grid.Column="7" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите email" Height="30" Width="70"/>
+        <TextBox Name="txtFirstCorpus" Grid.Row="28" Grid.Column="7" Grid.ColumnSpan="2"  ToolTip="введите email" Width="70"/>
 
         <TextBlock Grid.Row="27" Grid.Column="9"  Grid.ColumnSpan="2" Text="Строение">
         </TextBlock>
 
-        <TextBox Name="txtFirstStroenie" Grid.Row="28" Grid.Column="9" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите email" Height="30" Width="70"/>
+        <TextBox Name="txtFirstStroenie" Grid.Row="28" Grid.Column="9" Grid.ColumnSpan="2" ToolTip="введите email" Width="70"/>
         
         <TextBlock Grid.Row="27" Grid.Column="11"  Grid.ColumnSpan="3" Text="Квартира/офис">
         </TextBlock>
 
-        <TextBox Name="txtFirstApartm" Grid.Row="28" Grid.Column="11" Grid.ColumnSpan="3" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите email" Height="30" Width="110"/>
+        <TextBox Name="txtFirstApartm" Grid.Row="28" Grid.Column="11" Grid.ColumnSpan="3" ToolTip="введите email"/>
 
         <TextBlock Grid.Row="27" Grid.Column="14"  Grid.ColumnSpan="3" Text="Индекс">
         </TextBlock>
 
-        <TextBox Name="txtFirstIndx" Grid.Row="28" Grid.Column="14" Grid.ColumnSpan="3" VerticalAlignment="Center" HorizontalAlignment="Left" ToolTip="введите email" Height="30" Width="110"/>
+        <TextBox Name="txtFirstIndx" Grid.Row="28" Grid.Column="14" Grid.ColumnSpan="3" ToolTip="введите email"/>
 
     </Grid>
 </Page>

@@ -5,8 +5,8 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:PR6.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="EnterPage">
+      d:DesignHeight="1000" d:DesignWidth="800"
+      Title="EnterPage" Background="White">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -63,34 +63,30 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Button Name="btnEnterEnter"  Grid.Row="1" Grid.Column="1" ToolTip="нажмите для входа" Height="30" Width="150"  
-     VerticalAlignment="Center" HorizontalAlignment="Left">
+       
+
+        <Button Name="btnEnterEnter"  Grid.Row="2" Grid.Column="1" ToolTip="нажмите для входа" HorizontalAlignment="Left">
             <TextBlock Width="145" TextAlignment="Left"> Вход</TextBlock>
         </Button>
 
-        <Button Name="btnEnterRgstr"  Grid.Row="2" Grid.Column="1" ToolTip="нажмите для входа" Height="30" Width="150"  
-VerticalAlignment="Center" HorizontalAlignment="Left" Click="btnEnterRgstr_Click">
+        <Button Name="btnEnterRgstr"  Grid.Row="3" Grid.Column="1" ToolTip="нажмите для входа" HorizontalAlignment="Left" Click="btnEnterRgstr_Click">
             <TextBlock Width="145" TextAlignment="Left"> Регистрация</TextBlock>
         </Button>
 
-        <Button Name="btnFirstRgstr"  Grid.Row="2" Grid.Column="1" ToolTip="нажмите для входа" Height="30" Width="150"  
-VerticalAlignment="Center" HorizontalAlignment="Left">
-            <TextBlock Width="145" TextAlignment="Left"> Регистрация</TextBlock>
-        </Button>
+        <Label Grid.Row="1" Grid.Column="2" Content="Вступить в программу «Аэрофлот Бонус»" Grid.ColumnSpan="10" Height="45" Width="320" FontSize="16"/>
 
-        <Label Grid.Row="1" Grid.Column="2" Content="Вступить в программу «Аэрофлот Бонус»" Grid.ColumnSpan="7" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="12"/>
 
-        <Button Name="btnFirstUchPrg"  Grid.Row="2" Grid.Column="2" ToolTip="" Grid.ColumnSpan="4" Grid.RowSpan="2" Height="50" Width="100"  
+        <Button Name="btnEnterUchPrg"  Grid.Row="2" Grid.Column="2" ToolTip="" Grid.ColumnSpan="3" Grid.RowSpan="2" Height="60" Width="100"  FontSize="14" 
 VerticalAlignment="Center" HorizontalAlignment="Left">
             <TextBlock TextAlignment="Center"> Стать участником<LineBreak/>программы</TextBlock>
         </Button>
 
-        <Button Name="btnFirstActCrd"  Grid.Row="2" Grid.Column="5" ToolTip="" Grid.ColumnSpan="4" Grid.RowSpan="2" Height="50" Width="100"  
+        <Button Name="btnEnterActCrd" FontSize="14" Grid.Row="2" Grid.Column="5" ToolTip="" Grid.ColumnSpan="4" Grid.RowSpan="2" Height="60" Width="100"  
 VerticalAlignment="Center" HorizontalAlignment="Left">
             <TextBlock TextAlignment="Center"> Активировать<LineBreak/>временную карту</TextBlock>
         </Button>
 
-        <Button Name="btnFirstActCab"  Grid.Row="2" Grid.Column="8" ToolTip="" Grid.ColumnSpan="4" Grid.RowSpan="2" Height="50" Width="100"  
+        <Button Name="btnEnterActCab"  Grid.Row="2" Grid.Column="8" ToolTip="" Grid.ColumnSpan="4" Grid.RowSpan="2" Height="60" Width="100"  FontSize="14"  
 VerticalAlignment="Center" HorizontalAlignment="Left">
             <TextBlock TextAlignment="Center"> Активировать<LineBreak/>личный кабинет</TextBlock>
         </Button>

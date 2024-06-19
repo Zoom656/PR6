@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PR6"
         mc:Ignorable="d"
-        Title="Аэрофлот" Height="1000" Width="800">
+        Title="Аэрофлот" Height="1000" Width="800" Background="#062270">
    
     <Grid>
         <Grid.ColumnDefinitions>
@@ -14,7 +14,7 @@
         <Grid.RowDefinitions>
 
 
-            <RowDefinition Height="35"/>
+            <RowDefinition Height="45"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="45"/>
 
@@ -46,7 +46,7 @@
                 
             </MenuItem>
 
-            <MenuItem Name="menuSpec" Header="Спецпредложения">
+            <MenuItem Name="menu" Header="Спецпредложения">
             </MenuItem>
             
             
